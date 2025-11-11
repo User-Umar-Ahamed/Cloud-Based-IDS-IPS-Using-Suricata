@@ -99,11 +99,9 @@ By deploying Suricata in the cloud, the system gains **scalability, accessibilit
 **Explanation:** This image shows Suricata successfully detecting and logging malicious network activities in real time.
 The alerts include:
 
-ET SCAN Nmap OS Detection Probe — Detected during active reconnaissance.
-
-ET DROP Spamhaus DROP Listed Traffic — Indicates connections from known malicious IPs.
-
-ET DROP DShield Block Listed Source — Shows inbound packets from blacklisted sources.
+ 1) ET SCAN Nmap OS Detection Probe — Detected during active reconnaissance.
+ 2) ET DROP Spamhaus DROP Listed Traffic — Indicates connections from known malicious IPs.
+ 3) ET DROP DShield Block Listed Source — Shows inbound packets from blacklisted sources.
 
 Each log entry contains timestamps, classification (e.g., Misc Attack), priority level, and source/destination IPs — confirming that the IDS is functioning as expected.
 ---
