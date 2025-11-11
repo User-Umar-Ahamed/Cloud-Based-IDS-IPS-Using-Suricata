@@ -94,6 +94,7 @@ By deploying Suricata in the cloud, the system gains **scalability, accessibilit
 
 ## 🚨 7. Detected Threats and Alerts
 
+![Attack Captured](Images/8.png)
 ![Attack Captured](Images/7.png)
 **Explanation:** This image shows Suricata successfully detecting and logging malicious network activities in real time.
 The alerts include:
