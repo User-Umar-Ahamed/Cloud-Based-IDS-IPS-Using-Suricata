@@ -88,7 +88,7 @@ By deploying Suricata in the cloud, the system gains **scalability, accessibilit
 ## 🔍 6. Reconnaissance from Attack Machine
 
 ![Network Monitoring](Images/6.png)
-**Explanation:** The network traffic visualization shows Suricata’s ability to capture and analyze incoming packets in real time for inspection and classification.
+**Explanation:** This screenshot displays the results of an Nmap SYN scan (nmap -sS 159.223.64.232) executed from the Kali Linux Attack machine. The scan enumerates open ports and running services on the Suricata cloud server.This simulates a typical reconnaissance phase performed by attackers before exploiting vulnerabilities. Suricata later detects and logs these activities as potential intrusion attempts.
 
 ---
 
