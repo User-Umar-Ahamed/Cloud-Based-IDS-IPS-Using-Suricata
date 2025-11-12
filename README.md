@@ -104,6 +104,7 @@ The alerts include:
  3) ET DROP DShield Block Listed Source — Shows inbound packets from blacklisted sources.
 
 Each log entry contains timestamps, classification (e.g., Misc Attack), priority level, and source/destination IPs — confirming that the IDS is functioning as expected.
+
 ---
 
 ## 🏢 Practical Deployment Use Cases
