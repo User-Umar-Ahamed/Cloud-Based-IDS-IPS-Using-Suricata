@@ -106,9 +106,31 @@ The alerts include:
 Each log entry contains timestamps, classification (e.g., Misc Attack), priority level, and source/destination IPs — confirming that the IDS is functioning as expected.
 ---
 
-## 🎯 Project Outcome
+## 🏢 Practical Deployment Use Cases
 
-Demonstrated how a **Suricata-based IDS/IPS** can be deployed on a cloud platform to analyze and detect real-time threats. The configuration, rule management, and monitoring validate Suricata’s role as a lightweight yet powerful network defense tool.
+Suricata can be deployed flexibly across different parts of an organization’s network depending on monitoring or protection needs.  
+This project demonstrates a scalable setup that can be adapted for both **cloud** and **on-premises** environments.
+
+### 🔹 1. Main / Production Servers (Host-based IDS)
+Suricata can be installed directly on **application or web servers** to monitor inbound and outbound traffic.  
+In this **IDS mode**, it inspects packets in real time, detects malicious signatures, and logs potential intrusion attempts —  
+without interrupting normal operations.
+
+### 🔹 2. Dedicated Security Server (Network IDS/IPS)
+A best-practice deployment involves hosting Suricata on a **separate monitoring node** connected to a network tap or mirrored port.  
+This allows it to **analyze traffic across multiple systems** and even **block malicious packets** when configured in **IPS mode (inline)**  
+using NFQueue or AF_PACKET for active prevention.
+
+### 🔹 3. Storage or Data Servers (File Integrity & Access Monitoring)
+Suricata can monitor network traffic to and from **file storage or backup servers**, detecting unusual access behavior,  
+large data transfers, or ransomware-related exfiltration attempts — helping safeguard sensitive information assets.
+
+---
+
+### ⚙️ Summary
+> This Suricata-based IDS/IPS project can be deployed on **main servers**, **storage nodes**, or a **dedicated security server**  
+> to deliver real-time network visibility, intrusion detection, and active threat prevention capabilities.
+
 
 ---
 
